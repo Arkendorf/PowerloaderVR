@@ -31,6 +31,7 @@ public class MechHandMover : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        rigidbody.maxAngularVelocity = maxTorque;
     }
 
     // Update is called once per frame
